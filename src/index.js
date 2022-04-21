@@ -142,3 +142,75 @@
 // const arr5 = [10, 20];
 // const arr6 = arr5;
 // console.log(arr6);
+
+/**
+ * mapやfilter
+ */
+const arr1 = ["山田", "田中", "湯野"];
+
+// //通常
+// for (let index = 0; index < arr1.length; index++) {
+//   console.log(`${index + 1}番目は${arr1[index]}です`);
+// }
+
+// //map
+// arr1.map((a, index) => console.log(`${index + 1}番目は${arr1[index]}です`));
+
+// const arr2 = arr1.map((a) => a);
+// console.log(arr2);
+
+//filter
+// const arr3 = [1, 2, 3, 4, 5];
+// const arr4 = arr3.filter((a) => {
+//       return a%2===1;
+//   });
+// console.log(arr4);
+
+// const newnamearr = arr1.map((name) => {
+//   if (name === "湯野") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newnamearr);
+
+/**
+ * 三項演算子
+ */
+//ある条件 ? 条件がtrueの時：条件がfalseの時
+// const val1 = 1 < 0 ? `trueです`:`falseです`
+// console.log(val1);
+
+// const num = 1300;
+
+// const flootnum = typeof num === 'number' ? num.toLocaleString() : "数値を入力してください"
+// console.log(flootnum);
+
+// const checksum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "100未満です";
+// };
+// console.log(checksum(10,100));
+
+/**
+ * 論理演算子の本当の意味
+ */
+
+//  const flug1 = true;
+//  const flug2 = true;
+//  if(flug1 || flug2){
+//    console.log("1か2はtrue")
+//  }
+//  if(flug1 && flug2){
+//   console.log("1も2もtrue")
+// }
+
+//　||の左がfalseの場合に右を返す
+// const num = 100;
+// const fee = num || "金額未設定";
+// console.log(fee);
+
+//　&&の左がtrueの場合に右を返す
+// const num = 100;
+// const fee = num && "金額未設定";
+// console.log(fee);
